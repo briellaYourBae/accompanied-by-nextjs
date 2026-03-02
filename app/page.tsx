@@ -86,22 +86,14 @@ export default function Home() {
         <div className="loader-line" id="loader-line" />
       </div>
 
-      <nav className="fixed top-0 left-0 w-full px-[1cm] py-8 flex justify-between items-center z-[100] mix-blend-difference">
+      <nav className="fixed top-0 left-0 w-full px-[1cm] py-8 flex justify-center items-center z-[100] mix-blend-difference">
         <a 
           href="#" 
-          className="logo"
+          className="logo text-center"
           onMouseEnter={() => setIsHovered(true)} 
           onMouseLeave={() => setIsHovered(false)}
         >
           BILLIE
-        </a>
-        <a 
-          href="#contact" 
-          className="menu-btn"
-          onMouseEnter={() => setIsHovered(true)} 
-          onMouseLeave={() => setIsHovered(false)}
-        >
-          Connect
         </a>
       </nav>
 
