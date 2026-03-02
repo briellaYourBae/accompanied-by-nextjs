@@ -19,8 +19,8 @@ app/
   page.tsx            # Main portfolio page (client component)
   globals.css         # Tailwind + custom CSS untuk animasi
 public/
-  IMG/
-    trexx.png         # Foto untuk semua section
+  img/
+    trexx.jpeg        # Foto untuk semua section
 ```
 
 ## Fitur

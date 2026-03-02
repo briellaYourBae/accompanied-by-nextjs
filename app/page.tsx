@@ -127,7 +127,7 @@ export default function Home() {
         </div>
         <div className="hero-img-container">
           <Image 
-            src="/IMG/trexx.png" 
+            src="/img/trexx.jpeg" 
             alt="Profile" 
             fill 
             className="object-cover"
@@ -186,8 +186,8 @@ export default function Home() {
           <span className="section-number">(003)</span>
         </div>
         {[
-          { title: 'Fintech Corp', cat: 'Web Design / Development', img: '/IMG/trexx.png' },
-          { title: 'Neon Studio', cat: 'Branding / UI', img: '/IMG/trexx.png' }
+          { title: 'Fintech Corp', cat: 'Web Design / Development', img: '/img/trexx.jpeg' },
+          { title: 'Neon Studio', cat: 'Branding / UI', img: '/img/trexx.jpeg' }
         ].map((project, i) => (
           <div 
             key={i} 
@@ -221,8 +221,8 @@ export default function Home() {
         </div>
         <div className="cert-grid">
           {[
-            { img: '/IMG/trexx.png', title: 'AWS Certified' },
-            { img: '/IMG/trexx.png', title: 'Google UX Design' }
+            { img: '/img/trexx.jpeg', title: 'AWS Certified' },
+            { img: '/img/trexx.jpeg', title: 'Google UX Design' }
           ].map((cert, i) => (
             <div 
               key={i} 
