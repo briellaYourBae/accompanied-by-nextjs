@@ -88,8 +88,12 @@ export default function Home() {
 
       <nav className="fixed top-0 left-0 w-full px-[1cm] py-8 flex justify-center items-center z-[100] mix-blend-difference">
         <a 
-          href="#" 
+          href="#top" 
           className="logo text-center"
+          onClick={(e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          }}
           onMouseEnter={() => setIsHovered(true)} 
           onMouseLeave={() => setIsHovered(false)}
         >
@@ -138,7 +142,7 @@ export default function Home() {
           <span className="section-number">(001)</span>
         </div>
         <div className="about-text">
-          Billie Eilish Pirate Baird O&apos;Connell adalah penyanyi dan penulis lagu Amerika yang <strong style={{ color: 'var(--accent-color)' }}>merevolusi industri musik</strong> dengan suara unik dan gaya visualnya yang ikonik. Pemenang 9 Grammy Awards dan artis termuda yang memenangkan Album of the Year.
+          Billie Eilish Pirate Baird O&apos;Connell adalah seorang singer‑songwriter asal Los Angeles yang lahir pada 18 Desember 2001. Ia dikenal sebagai salah satu ikon musik paling berpengaruh di era 2020‑an dengan suara yang khas, gaya visual yang unik, dan pendekatan musik yang eksperimental. Billie pertama kali menarik perhatian publik pada tahun 2015 lewat lagu <strong style={{ color: 'var(--accent-color)' }}>&quot;Ocean Eyes&quot;</strong>, yang ditulis dan diproduseri oleh kakaknya, Finneas O&apos;Connell. Lagu itu awalnya diunggah ke SoundCloud dan langsung viral, mendorongnya menandatangani kontrak dengan label Darkroom.
         </div>
       </section>
 
@@ -253,7 +257,7 @@ export default function Home() {
             <span>&copy; {new Date().getFullYear()} Billie Eilish Tribute</span>
             <div className="socials">
               <a 
-                href="https://instagram.com/billieeilish" 
+                href="https://www.instagram.com/billieeilish/" 
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ marginLeft: '20px' }}
@@ -263,14 +267,24 @@ export default function Home() {
                 INSTAGRAM
               </a>
               <a 
-                href="https://twitter.com/billieeilish" 
+                href="https://x.com/billieeilish" 
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ marginLeft: '20px' }}
                 onMouseEnter={() => setIsHovered(true)} 
                 onMouseLeave={() => setIsHovered(false)}
               >
-                TWITTER
+                TWITTER/X
+              </a>
+              <a 
+                href="https://store.billieeilish.com/" 
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ marginLeft: '20px' }}
+                onMouseEnter={() => setIsHovered(true)} 
+                onMouseLeave={() => setIsHovered(false)}
+              >
+                STORE
               </a>
             </div>
           </div>
