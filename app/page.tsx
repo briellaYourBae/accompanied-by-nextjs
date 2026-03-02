@@ -114,7 +114,7 @@ export default function Home() {
       {/* Hero */}
       <section className="hero container">
         <div className="hero-content">
-          <span className="hero-subtitle">INDONESIA BASED &mdash; 2025</span>
+          <span className="hero-subtitle">INDONESIA BASED &mdash; {new Date().getFullYear()}</span>
           <div className="display-text">
             <div className="word-wrapper">
               <span>CREATIVE</span>
@@ -257,7 +257,7 @@ export default function Home() {
             Let&apos;s Talk
           </a>
           <div className="footer-bottom">
-            <span>&copy; 2025 LucieLL</span>
+            <span>&copy; {new Date().getFullYear()} LucieLL</span>
             <div className="socials">
               <a 
                 href="#" 
