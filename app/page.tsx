@@ -118,9 +118,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="hero-img-container">
+        <div className="hero-img-container hero-logo">
           <Image 
-            src="/img/trexx.jpeg" 
+            src="/img/logo-billie-eilish.png" 
             alt="Billie Eilish" 
             fill 
             className="object-cover"
@@ -175,8 +175,9 @@ export default function Home() {
           <span className="section-number">(003)</span>
         </div>
         {[
-          { title: 'Happier Than Ever', cat: 'Album / 2021', img: '/img/trexx.jpeg' },
-          { title: 'When We All Fall Asleep', cat: 'Album / 2019', img: '/img/trexx.jpeg' }
+          { title: 'Hit Me Hard and Soft', cat: 'Album / 2024', img: '/img/album-Hit-Me-Hard-and-Soft-2024.jpg' },
+          { title: 'Happier Than Ever', cat: 'Album / 2021', img: '/img/album-Happier-Than-Ever-2021.jpg' },
+          { title: 'When We All Fall Asleep', cat: 'Album / 2019', img: '/img/album-When-We-All-Fall-Asleep--Where-Do-We-Go-2019' }
         ].map((project, i) => (
           <div 
             key={i} 
@@ -189,7 +190,8 @@ export default function Home() {
                 <Image 
                   src={project.img} 
                   alt={project.title} 
-                  fill 
+                  width={960}
+                  height={640}
                   className="object-cover"
                 />
               </div>
@@ -207,14 +209,19 @@ export default function Home() {
           <h2 className="section-title">Gallery</h2>
           <span className="section-number">(004)</span>
         </div>
-        <div className="cert-grid">
+        <div className="columns-2 md:columns-3 lg:columns-4 gap-3 space-y-3">
           {[
-            { img: '/img/trexx.jpeg', title: 'Grammy Performance' },
-            { img: '/img/trexx.jpeg', title: 'World Tour' }
+            { img: '/img/billie-eilish-1.jpg', title: 'Portrait' },
+            { img: '/img/billie-eilish-2.jpg', title: 'World Tour' },
+            { img: '/img/billie-eilish-3.jpg', title: 'Photoshoot' },
+            { img: '/img/billie-eilish-4.jpg', title: 'Performance' },
+            { img: '/img/billie-eilish-5.jpg', title: 'Style Icon' },
+            { img: '/img/billie-eilish-6.jpg', title: 'Concert' },
+            { img: '/img/billie-eilish-grammy2020.jpg', title: 'Grammy 2020' }
           ].map((cert, i) => (
             <div 
               key={i} 
-              className="cert-card"
+              className="bg-[#111] p-2 border border-[#222] transition-all hover:-translate-y-1 hover:border-[#39ff14] hover:shadow-[0_0_20px_rgba(57,255,20,0.3)] cursor-pointer break-inside-avoid mb-3"
               onClick={() => openLightbox(cert.img)}
               onMouseEnter={() => setIsHovered(true)} 
               onMouseLeave={() => setIsHovered(false)}
@@ -222,11 +229,11 @@ export default function Home() {
               <Image 
                 src={cert.img} 
                 alt={cert.title} 
-                width={400} 
-                height={300}
+                width={700} 
+                height={1000}
                 className="w-full h-auto"
               />
-              <p style={{ marginTop: '10px', fontWeight: 700 }}>{cert.title}</p>
+              <p className="mt-1 text-xs font-bold">{cert.title}</p>
             </div>
           ))}
         </div>

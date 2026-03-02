@@ -4,14 +4,18 @@
 
 /* --- CORE VARIABLES & RESET --- */
 :root {
-  --bg-color: #050505;
+  --bg-color: #000000;
   --text-color: #e0e0e0;
-  --accent-color: #eb5939;
-  --secondary-color: #1a1a1a;
-  --border-color: rgba(255, 255, 255, 0.1);
+  --accent-color: #39ff14;
+  --secondary-color: #0a0a0a;
+  --border-color: rgba(57, 255, 20, 0.2);
   --cursor-size: 20px;
   --font-display: var(--font-syne);
   --font-body: var(--font-inter);
+}
+
+body {
+  background-color: #000000 !important;
 }
 
 * {
@@ -89,7 +93,7 @@ img {
 .loader-line {
   width: 0%;
   height: 2px;
-  background: var(--accent-color);
+  background: #39ff14;
   margin-top: 20px;
   transition: width 0.5s ease;
 }
@@ -212,6 +216,13 @@ img {
   transition: opacity 0.5s;
 }
 
+.hero-logo {
+  filter: none;
+  opacity: 1;
+  background: transparent;
+  mix-blend-mode: normal;
+}
+
 .hero-img-container img {
   height: 100%;
   clip-path: inset(100% 0 0 0);
@@ -224,11 +235,11 @@ img {
   width: 100%;
   padding: 4rem 0;
   overflow: hidden;
-  background: var(--text-color);
-  color: var(--bg-color);
+  background: #000;
+  color: #39ff14;
   transform: rotate(-2deg) scale(1.1);
-  border-top: 1px solid var(--accent-color);
-  border-bottom: 1px solid var(--accent-color);
+  border-top: 1px solid #39ff14;
+  border-bottom: 1px solid #39ff14;
 }
 
 .marquee-inner {
@@ -373,7 +384,8 @@ img {
 
 .cert-card:hover {
   transform: translateY(-10px);
-  border-color: var(--accent-color);
+  border-color: #39ff14;
+  box-shadow: 0 0 20px rgba(57, 255, 20, 0.3);
 }
 
 /* --- FOOTER/CONTACT --- */
@@ -393,7 +405,8 @@ footer {
 }
 
 .footer-cta:hover {
-  color: var(--accent-color);
+  color: #39ff14;
+  text-shadow: 0 0 20px rgba(57, 255, 20, 0.5);
 }
 
 .footer-bottom {
