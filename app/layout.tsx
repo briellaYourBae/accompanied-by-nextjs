@@ -17,6 +17,9 @@ const syne = Syne({
 export const metadata: Metadata = {
   title: "Billie Eilish | Fan Tribute",
   description: "A tribute website dedicated to Billie Eilish - Grammy Award winning artist",
+  icons: {
+    icon: "/public/img/logo-billie-eilish.png",
+  },
 };
 
 export default function RootLayout({

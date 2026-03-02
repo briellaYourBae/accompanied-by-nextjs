@@ -136,6 +136,7 @@ export default function Home() {
       <div className="marquee">
         <div className="marquee-inner">
           <span>Music &bull; Art &bull; Fashion &bull; Icon &bull; Music &bull; Art &bull; Fashion &bull; Icon &bull;</span>
+          <span>Music &bull; Art &bull; Fashion &bull; Icon &bull; Music &bull; Art &bull; Fashion &bull; Icon &bull;</span>
         </div>
       </div>
 
