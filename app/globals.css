@@ -45,7 +45,7 @@ img {
   left: 0;
   width: var(--cursor-size);
   height: var(--cursor-size);
-  border: 1px solid white;
+  border: 1px solid #39ff14;
   border-radius: 50%;
   pointer-events: none;
   z-index: 9999;
@@ -57,7 +57,7 @@ img {
 .cursor.hovered {
   width: 50px;
   height: 50px;
-  background-color: white;
+  background-color: #39ff14;
   border-color: transparent;
 }
 
@@ -131,6 +131,13 @@ img {
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: -2px;
+  cursor: pointer;
+}
+
+.display-text:hover {
+  color: #39ff14;
+  text-shadow: 0 0 30px rgba(57, 255, 20, 0.6);
+  transition: all 0.3s ease;
 }
 
 .section-header {
@@ -441,19 +448,192 @@ footer {
 
 /* --- RESPONSIVE --- */
 @media (max-width: 768px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+  
+  nav {
+    padding: 1.5rem 1rem;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .logo {
+    font-size: 1.25rem;
+  }
+  
+  .menu-btn {
+    font-size: 0.75rem;
+    padding: 0;
+    background: transparent;
+    border: none;
+    white-space: nowrap;
+  }
+  
+  .hero {
+    padding-top: 10vh;
+    min-height: 100vh;
+    justify-content: center;
+  }
+  
   .hero-content {
     text-align: center;
     width: 100%;
+    z-index: 10;
+    position: relative;
   }
+  
+  .hero-subtitle {
+    font-size: 0.7rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .display-text {
+    font-size: clamp(2.5rem, 15vw, 5rem);
+    line-height: 1;
+  }
+  
   .hero-img-container {
-    display: none;
+    display: block !important;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 90vw;
+    height: 90vw;
+    max-height: none;
+    opacity: 0.4 !important;
+    z-index: 0;
+    filter: none !important;
   }
+  
+  .marquee {
+    padding: 2rem 0;
+  }
+  
+  .marquee span {
+    font-size: 2.5rem;
+    padding-right: 2rem;
+  }
+  
+  .section-padding {
+    padding: 4rem 0;
+  }
+  
+  .section-header {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .section-title {
+    font-size: clamp(1.8rem, 10vw, 3rem);
+  }
+  
+  .section-number {
+    font-size: 0.85rem;
+  }
+  
+  .about-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  .service-list {
+    margin-top: 2rem;
+  }
+  
   .service-item {
     flex-direction: column;
     align-items: flex-start;
     gap: 1rem;
+    padding: 2rem 0;
   }
+  
+  .service-item:hover {
+    padding: 2rem 1rem;
+  }
+  
+  .service-name {
+    font-size: 1.8rem;
+  }
+  
   .service-desc {
     text-align: left;
+    font-size: 0.9rem;
+    max-width: 100%;
+  }
+  
+  .project-item {
+    margin-bottom: 4rem;
+  }
+  
+  .project-img-holder {
+    height: 50vh;
+  }
+  
+  .project-info {
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+  }
+  
+  .project-title {
+    font-size: 1.8rem;
+  }
+  
+  .project-cat {
+    font-size: 0.8rem;
+  }
+  
+  footer {
+    padding: 4rem 0 2rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 0.8rem !important;
+    text-align: center;
+    display: block;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-cta {
+    font-size: clamp(2rem, 12vw, 4rem) !important;
+    margin-bottom: 3rem;
+    padding: 0 1rem;
+    word-break: break-word;
+  }
+  
+  .footer-bottom {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .footer-bottom > span {
+    order: 2;
+  }
+  
+  .socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    order: 1;
+    width: 100%;
+  }
+  
+  .socials a {
+    margin-left: 0 !important;
+    font-size: 0.9rem;
+    padding: 0;
+    background: transparent;
+    border: none;
   }
 }

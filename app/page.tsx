@@ -108,7 +108,11 @@ export default function Home() {
       <section className="hero container">
         <div className="hero-content">
           <span className="hero-subtitle">GRAMMY WINNER &mdash; {new Date().getFullYear()}</span>
-          <div className="display-text">
+          <div 
+            className="display-text"
+            onMouseEnter={() => setIsHovered(true)} 
+            onMouseLeave={() => setIsHovered(false)}
+          >
             <div className="word-wrapper">
               <span>BILLIE</span>
             </div>
