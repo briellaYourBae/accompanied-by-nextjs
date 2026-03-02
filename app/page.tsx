@@ -86,7 +86,7 @@ export default function Home() {
       {/* Preloader */}
       <div className="preloader" id="preloader">
         <div className="preloader-text">
-          <span>GUSTIAWANDEV</span>
+          <span>LOADING...</span>
         </div>
         <div className="loader-line" id="loader-line" />
       </div>
@@ -150,7 +150,7 @@ export default function Home() {
           <span className="section-number">(001)</span>
         </div>
         <div className="about-text">
-          Saya <strong>Gustiawan</strong>, seorang pengembang yang tidak hanya menulis kode, tapi menciptakan <strong style={{ color: 'var(--accent-color)' }}>pengalaman digital</strong>. Saya menggabungkan estetika desain premium dengan performa teknis untuk menciptakan website yang memorable.
+          Seorang pengembang yang tidak hanya menulis kode, tapi menciptakan <strong style={{ color: 'var(--accent-color)' }}>pengalaman digital</strong>. Menggabungkan estetika desain premium dengan performa teknis untuk menciptakan website yang memorable.
         </div>
       </section>
 

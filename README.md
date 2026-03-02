@@ -1,4 +1,4 @@
-# GUSTIAWANDEV Portfolio
+# Portfolio Next.js
 
 Portfolio website Next.js 15 dengan Tailwind CSS dan TypeScript.
 

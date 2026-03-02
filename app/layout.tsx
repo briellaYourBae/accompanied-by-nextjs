@@ -15,7 +15,7 @@ const syne = Syne({
 });
 
 export const metadata: Metadata = {
-  title: "GUSTIAWANDEV | Creative Portfolio",
+  title: "Portfolio | Creative Developer",
   description: "Creative Developer Portfolio - Indonesia Based",
 };
 
