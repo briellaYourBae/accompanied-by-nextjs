@@ -1,6 +1,6 @@
-# Portfolio Next.js
+# Billie Eilish Tribute
 
-Portfolio website Next.js 15 dengan Tailwind CSS dan TypeScript.
+A tribute website dedicated to Billie Eilish built with Next.js 15, Tailwind CSS, and TypeScript.
 
 ## Setup
 

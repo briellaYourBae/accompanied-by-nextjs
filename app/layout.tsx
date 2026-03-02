@@ -15,8 +15,8 @@ const syne = Syne({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio | Creative Developer",
-  description: "Creative Developer Portfolio - Indonesia Based",
+  title: "Billie Eilish | Fan Tribute",
+  description: "A tribute website dedicated to Billie Eilish - Grammy Award winning artist",
 };
 
 export default function RootLayout({

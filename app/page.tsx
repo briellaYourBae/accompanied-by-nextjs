@@ -10,13 +10,11 @@ export default function Home() {
   const observerRef = useRef<IntersectionObserver | null>(null);
 
   useEffect(() => {
-    // Custom Cursor
     const handleMouseMove = (e: MouseEvent) => {
       setCursorPos({ x: e.clientX, y: e.clientY });
     };
     document.addEventListener('mousemove', handleMouseMove);
 
-    // Preloader
     const loaderLine = document.getElementById('loader-line') as HTMLDivElement | null;
     const preloader = document.getElementById('preloader') as HTMLDivElement | null;
     const heroSpans = document.querySelectorAll('.word-wrapper span');
@@ -40,7 +38,6 @@ export default function Home() {
       }, 500);
     }, 1000);
 
-    // Scroll Reveal
     observerRef.current = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -76,22 +73,19 @@ export default function Home() {
 
   return (
     <>
-      {/* Custom Cursor */}
       <div
         className={`cursor ${isHovered ? 'hovered' : ''}`}
         style={{ left: `${cursorPos.x}px`, top: `${cursorPos.y}px` }}
       />
       <div className="noise" />
 
-      {/* Preloader */}
       <div className="preloader" id="preloader">
         <div className="preloader-text">
-          <span>LOADING...</span>
+          <span>BILLIE EILISH</span>
         </div>
         <div className="loader-line" id="loader-line" />
       </div>
 
-      {/* Nav */}
       <nav className="fixed top-0 left-0 w-full px-[1cm] py-8 flex justify-between items-center z-[100] mix-blend-difference">
         <a 
           href="#" 
@@ -99,7 +93,7 @@ export default function Home() {
           onMouseEnter={() => setIsHovered(true)} 
           onMouseLeave={() => setIsHovered(false)}
         >
-          LucieLL
+          BILLIE
         </a>
         <a 
           href="#contact" 
@@ -107,28 +101,27 @@ export default function Home() {
           onMouseEnter={() => setIsHovered(true)} 
           onMouseLeave={() => setIsHovered(false)}
         >
-          Start a Project
+          Connect
         </a>
       </nav>
 
-      {/* Hero */}
       <section className="hero container">
         <div className="hero-content">
-          <span className="hero-subtitle">INDONESIA BASED &mdash; {new Date().getFullYear()}</span>
+          <span className="hero-subtitle">GRAMMY WINNER &mdash; {new Date().getFullYear()}</span>
           <div className="display-text">
             <div className="word-wrapper">
-              <span>CREATIVE</span>
+              <span>BILLIE</span>
             </div>
             <br />
             <div className="word-wrapper">
-              <span>DEVELOPER</span>
+              <span>EILISH</span>
             </div>
           </div>
         </div>
         <div className="hero-img-container">
           <Image 
             src="/img/trexx.jpeg" 
-            alt="Profile" 
+            alt="Billie Eilish" 
             fill 
             className="object-cover"
             priority
@@ -136,35 +129,32 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Marquee */}
       <div className="marquee">
         <div className="marquee-inner">
-          <span>Frontend &bull; UI/UX Design &bull; Web Animations &bull; Creative Coding &bull; Frontend &bull; UI/UX Design &bull; Web Animations &bull; Creative Coding &bull;</span>
+          <span>Music &bull; Art &bull; Fashion &bull; Icon &bull; Music &bull; Art &bull; Fashion &bull; Icon &bull;</span>
         </div>
       </div>
 
-      {/* About */}
       <section className="section-padding container" id="about">
         <div className="section-header">
-          <h2 className="section-title">Who I Am</h2>
+          <h2 className="section-title">About Billie</h2>
           <span className="section-number">(001)</span>
         </div>
         <div className="about-text">
-          Seorang pengembang yang tidak hanya menulis kode, tapi menciptakan <strong style={{ color: 'var(--accent-color)' }}>pengalaman digital</strong>. Menggabungkan estetika desain premium dengan performa teknis untuk menciptakan website yang memorable.
+          Billie Eilish Pirate Baird O&apos;Connell adalah penyanyi dan penulis lagu Amerika yang <strong style={{ color: 'var(--accent-color)' }}>merevolusi industri musik</strong> dengan suara unik dan gaya visualnya yang ikonik. Pemenang 9 Grammy Awards dan artis termuda yang memenangkan Album of the Year.
         </div>
       </section>
 
-      {/* Services */}
       <section className="section-padding container">
         <div className="section-header">
-          <h2 className="section-title">Services</h2>
+          <h2 className="section-title">Achievements</h2>
           <span className="section-number">(002)</span>
         </div>
         <div className="service-list">
           {[
-            { name: 'Development', desc: 'React, HTML5, CSS3, JavaScript, Clean Code & Performance.' },
-            { name: 'Design', desc: 'Figma, UI/UX, Prototyping, Design Systems.' },
-            { name: 'Interaction', desc: 'GSAP, WebGL, Micro-interactions, 3D Elements.' }
+            { name: 'Grammy Awards', desc: '9 Grammy Awards including Album, Record, Song of the Year.' },
+            { name: 'Billboard', desc: 'Multiple #1 hits, billions of streams worldwide.' },
+            { name: 'Cultural Icon', desc: 'Fashion icon, environmental activist, mental health advocate.' }
           ].map((service, i) => (
             <div 
               key={i} 
@@ -179,15 +169,14 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Projects */}
       <section className="section-padding container" id="projects">
         <div className="section-header">
-          <h2 className="section-title">Selected Works</h2>
+          <h2 className="section-title">Discography</h2>
           <span className="section-number">(003)</span>
         </div>
         {[
-          { title: 'Fintech Corp', cat: 'Web Design / Development', img: '/img/trexx.jpeg' },
-          { title: 'Neon Studio', cat: 'Branding / UI', img: '/img/trexx.jpeg' }
+          { title: 'Happier Than Ever', cat: 'Album / 2021', img: '/img/trexx.jpeg' },
+          { title: 'When We All Fall Asleep', cat: 'Album / 2019', img: '/img/trexx.jpeg' }
         ].map((project, i) => (
           <div 
             key={i} 
@@ -213,16 +202,15 @@ export default function Home() {
         ))}
       </section>
 
-      {/* Certificates */}
       <section className="section-padding container">
         <div className="section-header">
-          <h2 className="section-title">Awards</h2>
+          <h2 className="section-title">Gallery</h2>
           <span className="section-number">(004)</span>
         </div>
         <div className="cert-grid">
           {[
-            { img: '/img/trexx.jpeg', title: 'AWS Certified' },
-            { img: '/img/trexx.jpeg', title: 'Google UX Design' }
+            { img: '/img/trexx.jpeg', title: 'Grammy Performance' },
+            { img: '/img/trexx.jpeg', title: 'World Tour' }
           ].map((cert, i) => (
             <div 
               key={i} 
@@ -244,23 +232,26 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Contact */}
       <footer id="contact">
         <div className="container">
-          <span className="hero-subtitle">HAVE AN IDEA?</span>
+          <span className="hero-subtitle">WANT TO CONNECT?</span>
           <a 
-            href="mailto:email@example.com" 
+            href="https://www.billieeilish.com" 
+            target="_blank"
+            rel="noopener noreferrer"
             className="footer-cta"
             onMouseEnter={() => setIsHovered(true)} 
             onMouseLeave={() => setIsHovered(false)}
           >
-            Let&apos;s Talk
+            Visit Official Site
           </a>
           <div className="footer-bottom">
-            <span>&copy; {new Date().getFullYear()} LucieLL</span>
+            <span>&copy; {new Date().getFullYear()} Billie Eilish Tribute</span>
             <div className="socials">
               <a 
-                href="#" 
+                href="https://instagram.com/billieeilish" 
+                target="_blank"
+                rel="noopener noreferrer"
                 style={{ marginLeft: '20px' }}
                 onMouseEnter={() => setIsHovered(true)} 
                 onMouseLeave={() => setIsHovered(false)}
@@ -268,24 +259,25 @@ export default function Home() {
                 INSTAGRAM
               </a>
               <a 
-                href="#" 
+                href="https://twitter.com/billieeilish" 
+                target="_blank"
+                rel="noopener noreferrer"
                 style={{ marginLeft: '20px' }}
                 onMouseEnter={() => setIsHovered(true)} 
                 onMouseLeave={() => setIsHovered(false)}
               >
-                LINKEDIN
+                TWITTER
               </a>
             </div>
           </div>
         </div>
       </footer>
 
-      {/* Lightbox */}
       {lightboxSrc && (
         <div className="lightbox" onClick={() => setLightboxSrc(null)}>
           <Image 
             src={lightboxSrc} 
-            alt="Zoomed Certificate" 
+            alt="Gallery Image" 
             width={1200} 
             height={900}
             className="max-h-[90vh] max-w-[90vw] w-auto h-auto"
