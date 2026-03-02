@@ -99,7 +99,7 @@ export default function Home() {
           onMouseEnter={() => setIsHovered(true)} 
           onMouseLeave={() => setIsHovered(false)}
         >
-          G-DEV
+          LucieLL
         </a>
         <a 
           href="#contact" 
@@ -257,7 +257,7 @@ export default function Home() {
             Let&apos;s Talk
           </a>
           <div className="footer-bottom">
-            <span>&copy; 2025 G-DEV</span>
+            <span>&copy; 2025 LucieLL</span>
             <div className="socials">
               <a 
                 href="#" 
