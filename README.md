@@ -20,10 +20,7 @@ app/
   globals.css         # Tailwind + custom CSS untuk animasi
 public/
   IMG/
-    foto_kamu-removebg-preview.png
-    contoh_project1.jpg
-    sertivikat1.jpg
-    sertivikat2.jpg
+    trexx.png         # Foto untuk semua section
 ```
 
 ## Fitur

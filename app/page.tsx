@@ -127,8 +127,8 @@ export default function Home() {
         </div>
         <div className="hero-img-container">
           <Image 
-            src="/IMG/foto_kamu-removebg-preview.png" 
-            alt="Gustiawan Profile" 
+            src="/IMG/trexx.png" 
+            alt="Profile" 
             fill 
             className="object-cover"
             priority
@@ -186,8 +186,8 @@ export default function Home() {
           <span className="section-number">(003)</span>
         </div>
         {[
-          { title: 'Fintech Corp', cat: 'Web Design / Development', img: '/IMG/contoh_project1.jpg' },
-          { title: 'Neon Studio', cat: 'Branding / UI', img: '/IMG/contoh_project1.jpg' }
+          { title: 'Fintech Corp', cat: 'Web Design / Development', img: '/IMG/trexx.png' },
+          { title: 'Neon Studio', cat: 'Branding / UI', img: '/IMG/trexx.png' }
         ].map((project, i) => (
           <div 
             key={i} 
@@ -221,8 +221,8 @@ export default function Home() {
         </div>
         <div className="cert-grid">
           {[
-            { img: '/IMG/sertivikat1.jpg', title: 'AWS Certified' },
-            { img: '/IMG/sertivikat2.jpg', title: 'Google UX Design' }
+            { img: '/IMG/trexx.png', title: 'AWS Certified' },
+            { img: '/IMG/trexx.png', title: 'Google UX Design' }
           ].map((cert, i) => (
             <div 
               key={i} 
